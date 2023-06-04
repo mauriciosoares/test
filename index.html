@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div style="display: none !important"><matricula>0585693</matricula></div>
+    <div
+      style="
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 2%;
+        color: #00008b;
+        font-family: Verdana;
+        font-size: 30px;
+      "
+    >
+      <img src="https://www.unip.br/assets/img/logo/logo-unip-2021.svg" />
+      <table width="100%" border="0" cellspacing="0" cellpadding="1">
+        <tbody>
+          <tr>
+            <td colspan="2" align="center">
+              <b><font face="Arial">Dados do Aluno</font></b>
+              <font face="Arial"></font>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><hr noshade="" color="blue" size="1" /></td>
+          </tr>
+          <tr>
+            <td style="width: 330px"><b>Matrícula:</b></td>
+            <td style="text-transform: uppercase">0585693</td>
+          </tr>
+          <tr>
+            <td style="width: 180px"><b>Nome:</b></td>
+            <td style="text-transform: uppercase">DAVID DA SILVA NASCIMENTO</td>
+          </tr>
+          <tr>
+            <td style="width: 180px"><b>RG:</b></td>
+            <td style="text-transform: uppercase">496779709</td>
+          </tr>
+          <tr>
+            <td style="width: 180px"><b>Nascimento:</b></td>
+            <td style="text-transform: uppercase">23/01/1995</td>
+          </tr>
+          <tr>
+            <td style="width: 180px"><b>Curso:</b></td>
+            <td style="text-transform: uppercase">
+              55827 - SUP TEC EM GESTÃO DA QUALIDADE
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 180px"><b>Unidade:</b></td>
+            <td style="text-transform: uppercase">
+              4007 - JUNDIAÍ - POLO PRÓPRIO
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 180px"><b>Carteirinha:</b></td>
+            <td style="text-transform: uppercase">Ativo</td>
+          </tr>
+          <tr>
+            <td style="width: 30px"><b>Validade:</b></td>
+            <td style="text-transform: uppercase">
+              Dentro do prazo de validade
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><hr noshade="" color="blue" size="1" /></td>
+          </tr>
+          <tr>
+            <td colspan="2" style="font-size: 18px">
+              Data: <span id="date"></span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script>
+      document.getElementById("date").innerText = new Date().toLocaleDateString(
+        "pt-br",
+        { year: "numeric", month: "numeric", day: "numeric" }
+      );
+    </script>
+  </body>
+</html>
